@@ -70,3 +70,27 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+/* accessibility fixes */
+/* skip link styling */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #000;
+  color: azure;
+  padding: 8px 16px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* focus outline for keyboard users */
+a:focus,
+button:focus
+input:focus
+textarea:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
